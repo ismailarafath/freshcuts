@@ -1,0 +1,1139 @@
+/* @import url("./fonts.css"); */
+@font-face {
+    font-family: roboto;
+    src: url('fonts/roboto/Roboto-Regular.ttf');
+}:root{
+    --black :#000;
+    --pink :#ff375e;
+}
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e2e2e2;
+}
+.naf-acc-container{
+    display: block;
+    position: relative;
+}
+.naf-acc-headers{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background: #e2e2e2;
+}
+.naf-acc-header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding : 6px;
+}
+.naf-acc-header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.naf-acc-header-left-titles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.naf-acc-header-title-image img{
+    width: 135px;
+    margin-right: 10px;
+}
+.naf-acc-header-title-name{
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #2d2ea6;
+    margin-left: 5px;
+}
+.naf-acc-header-menu-items{
+    margin-left: 60px;
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.mnu{
+    text-decoration: none;
+    color: #626161;
+    padding : 2px 5px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+.mnu i{
+    margin-right: 10px;
+}
+.mnu:hover{
+    color :#146a79;
+    text-decoration: underline;
+}
+.mnu-active{
+    color: #0090ff;
+    text-decoration: underline;
+}
+.naf-acc-header-menu-list{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.naf-acc-header-right{
+    display: flex;
+    padding: 3px 0px;
+    align-items: center;
+}
+.naf-acc-header-right-userdisplay{
+    color: #232425;
+    font-family: 'overpass',sans-serif;
+    font-size: 0.9rem;
+    /* text-decoration: underline; */
+    padding: 7px;
+    margin-right: 20px;
+    border-right: 1px solid rgb(0 0 0 / 18%);
+}
+.naf-acc-header-right-menu-list{
+    display: flex;
+    align-items: center;
+}
+.naf-acc-header-right-menu-items{
+    padding: 5px 8px;
+    font-size: 0.8rem;
+}
+.naf-acc-header-right-menu-items a{
+    color :#626161;
+    text-decoration: none;
+    font-family: 'overpass',sans-serif;
+
+}
+.naf-acc-header-right-menu-items a:hover{
+    color :#0090ff;
+    cursor: pointer;
+}
+.naf-acc-footer{
+    font-family: 'overpass',sans-serif;
+    background-color: #e2e2e2;
+    font-size: 0.7rem;
+    float: right;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+.naf-acc-fotter-text{
+    margin-right: 20px;
+    float: right;
+}
+.naf-acc-body{
+
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding : 8px;
+    color : #000000b3;
+}
+.naf-acc-router-container{
+    padding: 0px;
+    background: #fff8f8;
+    border: 1px solid #e6e5e5;
+    border-radius: 15px;
+    margin : 0px auto;
+}
+.naf-acc-router-main-head{
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    color: #181818;
+    font-size: 1rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.naf-acc-router-main-head i{
+    margin-right : 20px;
+}
+.naf-acc-router-main-head i:hover{
+   color: #2483db;
+}
+
+.naf-acc-router-dashboard-card-container{
+    padding : 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.naf-acc-card{
+    display: block;
+    padding : 15px;
+    margin: 20px;
+    border-radius: 15px;
+
+
+}
+.card-conatiner{
+    display: flex;
+    justify-content: center;
+
+}
+.iconsdiv{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.card-counter{
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card-title{
+    /* //font-family: 'se',sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+.card-blue{
+    border:1px solid #d9ecfa;
+    border-left: 2px solid #0090ff;
+    color :#0090ff;
+}
+.card-blue-title{
+    color :#68b9f6
+}
+
+.card-green{
+    border:1px solid #beffeb;
+    border-left: 2px solid #087756;
+    color :#087756;
+}
+.card-green-title{
+    color :#23be90
+}
+
+.card-red{
+    border:1px solid #ffc3c3;
+    border-left: 2px solid #952e2e;
+    color :#952e2e;
+}
+.card-red-title{
+    color :#a35555
+}
+
+.card-orange{
+    border:1px solid #ff9f8e;
+    border-left: 2px solid #d84400;
+    color :#d84400;
+}
+.card-orange-title{
+    color :#c06f4f
+}
+
+.card-purple{
+    border:1px solid #c088ff;
+    border-left: 2px solid #6838bb;
+    color :#6838bb;
+}
+.card-purple-title{
+    color :#70579e
+}
+.naf-project-sub-container{
+    /* margin-top: 20px;
+    margin-left: 10px; */
+    padding : 15px;
+}
+.naf-ams-rows{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.naf-ams-col{
+    width: 300px;
+    padding: 0px 4px 4px 0px;
+    margin: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.naf-ams-lable{
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #292727;
+    padding: 3px 3px 3px 0px;
+}
+.naf-acc-inputs{
+    font-family: 'roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 17px;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 3px;
+    border: 1px solid #0000003b;
+    background: #eaebec;
+    outline: 1px solid transparent;
+    transition: border 0.6s ease, background-color 0.6s ease-out, width 0.2s ease-in-out;
+    -webkit-transition: border 0.6s ease, background-color 0.6s ease-out, width 0.2s ease-in-out;
+    -moz-transition: border 0.6s ease, background-color 0.6s ease-out, width 0.2s ease-in-out;
+    -ms-transition: border 0.6s ease, background-color 0.6s ease-out, width 0.2s ease-in-out;
+    -o-transition: border 0.6s ease, background-color 0.6s ease-out, width 0.2s ease-in-out;
+}
+
+.naf-acc-inputs:read-only{
+    background-color: #f0e1e1;
+    color: #980000;
+    font-weight: 600;
+    cursor: no-drop;
+
+}
+.naf-acc-inputs:hover,
+.naf-acc-inputs:focus
+{
+    background: #f3f3f3;
+    border: 1px solid #ccc4ff;
+}
+.naf-acc-inputs:hover:read-only,
+.naf-acc-inputs:focus:read-only{
+    background-color: #f0e1e1;
+    color: #980000;
+    font-weight: 600;
+    cursor: no-drop;
+}
+.naf-acc-hidemneu{
+    display: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #626161;
+}
+.naf-ams-menu-dialog{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+    background: #000000ab;
+    backdrop-filter: blur(5px) saturate(180%);
+    overflow: auto;
+}
+.naf-acc-hidemneu .fa:hover{
+    background-color: #232425;
+    color: #fff;
+}
+.naf-ams-menu-container{
+    padding: 15px;
+    width: 450px;
+    margin: 50px auto;
+    background: #f2f1f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px;
+
+}
+.naf-ams-menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.naf-ams-menu-header .naf-ams-menu-header-title{
+    margin-right: 20px;
+}
+.naf-ams-menu-header-closebutn .fa:hover{
+    color :#f93714
+}
+.naf-ams-menu-body{
+    display: block;
+    overflow: auto;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+.naf-ams-menu-body .naf-ams-menu-head{
+    background: #fff;
+    font-size: 1.4rem;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px #ddd7f7;
+    margin-bottom: 2px;
+    -webkit-border-radius: 6px;
+}
+.naf-ams-menu-body-header-buttonlist{
+    display: flex;  
+    flex-direction: row-reverse;
+    padding: 5px;
+    background: #dfdee6;
+    border: 1px dashed #b5b4b7;
+    border-radius: 5px;      
+}
+.naf-ams-menu-body .naf-ams-menu-items-list
+{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px #ddd7f7;
+    margin-bottom: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.naf-ams-menu-body .naf-ams-menu-items-list .acc-header-menu-list-items{
+    padding : 5px;
+    border-bottom: 1px solid #e2dada;
+}
+.naf-ams-menu-body .naf-ams-menu-items-list .acc-header-menu-list-items .mnu{
+
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.naf-ams-menu-body .naf-ams-menu-items-list .acc-header-menu-list-items:hover{
+    padding : 5px;
+    border-bottom: 1px solid #0090ff;
+}
+.naf-ams-menu-body .naf-ams-menu-items-list:last-child
+{
+    padding : 5px;
+    border-bottom: 1px solid transparent;
+}
+.naf-ams-menu-body .naf-ams-menu-items-list:last-child:hover
+{
+    border-bottom: 1px solid transparent;
+}
+
+.naf-ams-buttons-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.naf-ams-btn{
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    border: none;
+    line-height: 1rem;
+    padding: 5px 12px;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor:pointer;
+    transition:background-color0.7s ease,color 0.3s ease;
+
+}
+
+.naf-ams-btn-primary{
+    background-color: #2483db;
+    color: #fff;
+}
+
+.naf-ams-btn-primary:hover{
+    background-color: #1f8e72;
+    color: #fff;
+}
+.naf-ams-btn-danger{
+    color: #f72d2d;
+}
+
+.naf-ams-btn-danger:hover{
+    background-color:#f72d2d;
+    color : #fff;
+}
+.naf-ams-btn-link{
+    color :#2483db
+}
+.grid-linkbutn{
+    padding: 0px;
+    text-decoration: none;
+}
+.naf-ams-btn-link:hover{
+    text-decoration: underline;
+}
+
+.naf-ams-btn-excelexport{
+    background-color: #087756;
+    color :#fff;
+}
+.naf-ams-btn-excelexport:hover{
+    background-color: #146a79;
+}
+.naf-ams-btn-primary:disabled,
+.naf-ams-btn-danger:disabled,
+.naf-ams-btn-link:disabled,
+.naf-ams-btn-excelexport:disabled,
+.naf-ams-btn:disabled{
+    background-color: #e5dede;
+    color: #000;
+    cursor:no-drop;
+    box-shadow:none;
+
+}
+
+.naf-ams-btn:hover:disabled,
+.naf-ams-btn:focus:disabled{
+    background-color: #e5dede;
+    color: #000;
+    box-shadow:none;
+
+}
+.errordiv{
+    margin: 10px 10px 10px 20px;
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #952e2e;
+}
+.naf-addons{
+    display: flex;
+    align-items: center;
+}
+.naf-addons input{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+.naf-addons button{
+    border-radius: 0px;
+
+}
+.gird-btn{
+    font-weight: bold;
+    border:1px solid #f72d2d;
+    padding:2px;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+}
+.naf-am-table{
+    display: block;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+.naf-am-table th,td{
+    border: 1px solid #cecece;
+    padding: 5px;
+    color: #2b2626;
+}
+.naf-am-table th{
+    background-color: #cecece;
+    text-align: left;
+    color: #353535;
+}
+.naf-am-table .money-value{
+    text-align: right;
+}
+.subtotamount-naf-ams{
+    font-weight: bold;
+    color: #952e2e;
+}
+.naf-ams-spinfos{
+    margin-top: 20px;
+    padding: 10px;
+    background: #e7e7e7;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: #3c3c3c;
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* new model*/
+
+.armodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818c0;
+    backdrop-filter: blur(3px) saturate(190%);
+    z-index: 4;
+    overflow: auto;
+}
+
+.armodal .armodel-container {
+    position: relative;
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    width: 1020px;
+    margin: 10px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.armodal .armodel-container .armodelhead {
+    position: relative;
+    background-color: #d7e0e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.1rem;
+    padding: 12px 8px;
+}
+
+.armodal .armodel-container .armodelhead .armodel-title {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.armodal .armodel-container .armodelhead .armodel-title .left-titles {
+    margin-left: 10px;
+}
+
+.armodal .armodel-container .armodelhead .armodel-closebtn {
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.armodal .armodel-container .armodelhead .armodel-closebtn:hover {
+    background-color: #ff9c9c;
+    box-shadow: 3px 3px 6px #ffa8a8;
+    border: 1px solid #ff5b5b;
+}
+
+.armodal .armodel-container .armodelhead .armodel-closebtn:hover i {
+    color: #481919;
+}
+
+.armodal .armodel-container .armodelhead .armodel-closebtn .fa {
+    margin: 0px !important
+}
+
+.armodal .armodel-container .armodelbody {
+    position: relative;
+    overflow: auto;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+}
+
+.armodal .armodel-container .armodelbody .armodelbodywarper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.armodal .armodel-container .armodelbody .armodelbodywarper .arbodyheader {
+    /* background-color: #cde8f4; */
+    padding: 3px 3px;
+    font-weight: 600;
+    color: #076994;
+    border-bottom: 1px solid #0591cf;
+    /* border-radius: 5px; */
+    margin-bottom: 2px;
+}
+
+.armodal .armodel-container .armodelbody .armodelbodywarper .row{        
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding : 5px;
+    justify-content: flex-start;
+}
+
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .frm{
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;    
+}
+
+
+
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .frm .frmlable{
+    font-weight: normal;
+    font-size : 1rem;
+    color :#181818;
+    margin-bottom : 5px;
+}
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .frm .frmcontraollers-entry{
+    display: flex;
+    width: 160px;
+    margin: 2px 0;
+}
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .col2{
+    width: 550px;
+    margin-right: 2px;
+}
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .col2 .row{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding : 5px;
+}
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .col2 .frm{
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;    
+}
+.armodal .armodel-container .armodelbody .armodelbodywarper .row .col2 .row .frm .frmcontraollers-entry{
+    display: flex;
+    width: 200px;
+    margin: 2px 0;
+}
+
+.arnewinput {
+    border: 1px solid #020202;
+    /* border-radius: 3px; */
+    font-family: 'sfpro',-apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 1.4rem;
+    align-items: center;
+    width: 100%;
+    outline: 1px solid transparent !important;
+    padding: 2px 4px;
+}
+
+.arnewinput:disabled {
+    background-color: #ffdcdc !important;
+    cursor: no-drop !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+}
+
+.nomal:hover,
+.nomal:focus,
+.nomal:active {
+    background: #fff;
+    /* box-shadow: 1px 1px 12px #c3e9fb; */
+    border: 1px solid #0085c1;
+}
+.danger{
+    color :#861d1d;
+}
+.danger:hover,
+.danger:focus,
+.danger:active {
+    background: #fff;    
+    border: 1px solid #861d1d;
+    color :#861d1d;
+}
+.danger:read-only{
+    background-color: #f4d4d4;
+    font-weight: 600;
+    /* box-shadow: 1px 1px 12px #fbc3c3; */
+    border: 1px solid #ad7676;
+}
+
+.nomal:read-only
+{
+    background: #eaf4f8;
+    /* box-shadow: 1px 1px 12px #c3e9fb; */
+    border: 1px solid #2a5163;
+}
+
+ .dangerhead {
+     
+    color: #940707 !important;
+    border-bottom: 1px solid #cf0505 !important;    
+    
+    
+}
+.armodal .armodel-container .arfoot{
+    position: relative;
+    margin : 5px 0px;
+    padding : 5px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.armodal .armodel-container .arfoot .button-list-right .cancelbutn{
+    line-height: 1.3rem;    
+    box-sizing: border-box;
+    background: #ffcbcb;
+    border: 1px solid #f14c4ca3;
+    color: #c70000;
+    
+
+}
+
+.armodal .armodel-container .arfoot .button-list-left{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.armodal .armodel-container .arfoot .button-list-left .printpayslip{
+    line-height: 1.3rem;
+    box-sizing: border-box;
+    background: #1b87b1;
+    border: 1px solid #1b87b1;
+    color: #e1f0ff;    
+    margin-right: 10px;
+    text-decoration: none;
+    padding : 3px;
+    
+}
+.armodal .armodel-container .arfoot .button-list-left .submitbutton{
+    line-height: 1.3rem;    
+    box-sizing: border-box;
+    background: #2c7575;
+    border: 1px solid #2c7575;
+    color: #9cf3dd;
+    padding : 3px;
+    
+}
+.armodal .armodel-container .arfoot .button-list-left .submitbutton:disabled{
+    background-color: #aaaaaa;
+    color : #000;
+    cursor: no-drop;
+}
+
+
+.armodal .armodel-container .arfoot .button-list-right .cancelbutn:hover,
+.armodal .armodel-container .arfoot .button-list-left .printpayslip:hover,
+.armodal .armodel-container .arfoot .button-list-left .submitbutton:hover{
+    color: #fff9f9;
+    background: #2d2b2b;
+    border: 1px solid #2d2b2b;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.naf-ams-tablediv {
+    position: relative;
+    display: table;
+    background: #efefef;
+    border: 1px solid #e1e1e1;
+    border-collapse: collapse;
+    padding: 15px;   
+   
+}
+
+.naf-asm-table-row {
+    display: table-row;
+    border: 1px solid #e3e1e1;
+}
+
+.naf-ams-table-cell {
+    display: table-cell;
+    padding: 5px;
+}
+
+.head-cell {
+    font-size: 1.01rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.decrip-cell {
+    width: 350px;
+}
+
+.pre-cell {
+    width: 120px;
+}
+
+.pval-cell {
+    width: 200px;
+}
+
+.cval-cell {
+    width: 200px;
+}
+
+.totval-cell {
+    width: 200px;
+}
+
+.cell-normal {
+    color: #272727;
+    font-weight: 500;
+
+
+}
+
+.table-lable {
+    text-align: right;
+    width: 158.4px;
+    font-weight: 600;
+}
+
+.cl-red {
+    color: red;
+}
+
+.table-inputs {
+    width: 225px;
+}
+
+.subtotal-row {
+    border-top: 2px solid #a747472e !important;
+    border-bottom: 2px solid #a747472e !important;
+}
+
+.sub-total {
+    font-weight: 600;
+    color: #a74747;
+    font-size: 1.0rem;
+}
+
+.row-group-title {
+    border-bottom: 2px solid #1f72762e !important
+}
+
+.row-title {
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    background: rgb(4 102 70 / 10%);
+}
+
+.cell-group-title {
+    font-weight: bolder;
+    color: #1f7276;
+    font-size: 1.0rem;
+}
+
+.naf-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+.naf-btn-adds {
+    padding: 5px 15px;
+    background: #2e6980;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 0px;
+    line-height: 1rem;
+    transition: background-color 0.6s ease;
+    font-family: 'sfpro', -apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px 5px;
+}
+
+.naf-btn-adds:hover {
+    background: #0287bc;
+}
+
+.lable-cell {
+    width: 220px;
+
+}
+
+.input-cell {
+    width: 300px;
+}
+
+.naf-asm-new-input {
+    padding: 6px 8px;
+    background: #e3e3e3;
+    border: 1px solid #c5c3c3;
+    width: 100%;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'sfpro', -apple-system, BlinkMacSystemFont, 'se', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.naf-asm-new-input:focus {
+    background-color: #d4d4d4;
+}
+
+.naf-asm-new-input:read-only {
+    background-color: #ffdede;
+    color: #ad0423;
+}
+
+.naf-asm-new-input:focus:read-only {
+    background-color: #ffdede;
+    color: #ad0423;
+}
+
+.arnewinput {
+    border: 1px solid #747474 !important;
+    /* text-align: right; */
+    /* line-height: 0px !important; */
+    padding : 6px;
+}
+select{
+    border: 1px solid #747474 !important;
+    /* text-align: right; */
+    /* line-height: 0px !important; */
+    padding : 6px;  
+}
+.subtotal_workdone {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.subtotal_cl1 {
+    background: #a1b385;
+}
+
+.subtotal_cl3 {
+    background: #fff0a9;
+}
+
+.subtotal_cl2 {
+    background: #c5a5cd;
+}
+
+.table-input-numbers {
+    text-align: right;
+    font-weight: 600;
+}
+
+.tbl-view {
+    border: 1px solid #cbcaca;
+}
+
+._green1 {
+    background-color: #ddffe0;
+    color: #194e1d;
+}
+
+._blue2 {
+    color: #297F87;
+    border: 1px solid #297F87
+}
+
+._blue2:hover {
+    background-color: #297F87;
+    color: #fff;
+}
+
+.ag-header-group-cell-label {
+    justify-content: center;
+}
+.danger_column {
+    background-color: #ffebe5;
+    color: #000;
+}
+
+.success_column {
+    background-color: #e8fff9;
+    color: #000;
+}
+button>i{
+    margin-right : 5px;
+}
+.footerdiv{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: #ebebeb;
+    width: 100%;
+}
+.naf-ams-buttons-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.rightsidedescription{
+    padding: 15px;
+    color: #ad1818;
+    background: #ffeaea;
+    border-radius: 15px;
+    box-shadow: 4px 7px 8px #ffc6c6;
+    border: 1px dashed;
+    font-size: 13px;
+}
+.rightsidedescription ul{
+    list-style-type: none;
+}
+.loadingscreen{    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color:rgba(161, 161, 161);
+    background-image: url('./../UI/bgimg.jpg');
+}
+.innerloading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: 800;;
+}
+@media only screen and (max-width: 1300px){
+    .naf-ams-menu-body .naf-ams-menu-items-list .acc-header-menu-list-items{
+        padding: 2;
+    }
+    .mnu{
+        font-size: 0.6rem;
+    }
+    .mnu i{
+        display: none;
+    }
+    .naf-acc-header-right{
+        font-size: 0.7rem;
+    }
+}
+/* new dialog */
+@media only screen and (max-width: 860px){
+    .naf-acc-header-title-name{
+        font-size: 0.96rem;
+    }
+    .naf-acc-card{
+        width: 40%;
+    }
+    .naf-ams-col{
+        width: 50%;
+    }
+    .naf-acc-hidemneu{
+        display: block;
+    }
+    .naf-acc-header-right{
+        display: none;
+    }
+    .naf-acc-header-menu-items{
+        display: none;
+    }
+}
+@media only screen and (max-width: 858px){
+    .naf-acc-card{
+        width: 100%;
+    }
+    .naf-ams-col{
+        width: 100%;
+    }
+}
+

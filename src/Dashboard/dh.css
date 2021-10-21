@@ -1,0 +1,130 @@
+:root{
+    --color : #664E88;
+}
+*{
+    margin: 0px;
+}
+body{
+    margin: 0px !important;
+    padding:0px !important;
+    background-color:#e4ecf3;
+}
+.own_mainpage{
+    width : 100%;
+    display: block;
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    
+}
+.own_container{
+    width:100%;
+    position: sticky;
+    top:0px;
+    display:block;
+    margin-bottom: 10px;
+}
+.header{
+    display:block;
+    background-color: var(--color);
+    padding : 5px 15px;
+    color:#fff;
+}
+.header_row{
+    display :flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.main_title{
+    padding : 5px;
+}
+.maintitle_link{
+    color :#fff;
+}
+.maintitle_link:hover{
+    color :#fff;
+}
+.left_menu{
+    display:flex;
+    align-items:center;
+}
+.menu_items{
+    padding : 3px 8px;
+}
+.linkitems{
+    color :#fff;
+}
+.linkitems:hover{
+    color :rgb(228, 228, 228);
+}
+
+.logout_btn{
+    border: 1px solid transparent;
+    background-color: rgba(243, 83, 83, 0.719);
+    padding: 5px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color :#fff;
+}
+
+.subPage_conatainer{
+    display : block;
+    padding : 15px;    
+}
+.sub_page_row{
+    background: #fff;
+    padding:15px;
+    margin: 10px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.sub_page_title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.main_container_sub{
+    display : block;
+    overflow: auto;
+    padding:5px;
+}
+
+.main_table{
+    display:table;
+    border-collapse: collapse;
+    border  : 1px solid rgb(177, 177, 177);
+    flex-wrap: nowrap;
+    width:auto;
+    background-color:rgb(236, 244, 246);
+    margin : 10px auto;
+}
+.table_row{
+    display : table-row;
+    border  : 1px solid rgb(177, 177, 177);
+
+}
+.table_cells{
+    display : table-cell;
+    border  : 1px solid rgb(177, 177, 177);
+    padding: 2px;
+}
+.sized_table{    
+    width: 500px;
+}
+.myctrl{
+    width:100%
+}
+.lable_cell{
+    text-align: left;
+    margin-left: 10px;
+    width : 200px;
+}
+
+.error_box{
+    color : red;
+}
